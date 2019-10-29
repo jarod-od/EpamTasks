@@ -1,4 +1,4 @@
-package lecture_code;
+package od.jarod.epam.lecture_code;
 
 import java.util.Random;
 
