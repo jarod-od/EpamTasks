@@ -7,19 +7,17 @@ public class Task03 {
 	public static void main(String[] args) {
 
 		int[] numbers = { 3, 4, -5, 8, -45 };
+		
+		System.out.println(numbers[0] < 0 ? "first element is negative": "first element is positive" );
 
-		String marker = " ";
-		for (int i = 0; i < numbers.length;) {
-
-			if (numbers[i] < 0) {
-				marker = "First element is negative: " + numbers[i];
-				break;
-
-			} else {
-				marker = "First element is positive: " + numbers[i];
-				break;
-			}
-		}
-		System.out.println(marker);
+		/*
+		 * String marker = " "; for (int i = 0; i < numbers.length;) {
+		 * 
+		 * if (numbers[i] < 0) { marker = "First element is negative: " + numbers[i];
+		 * break;
+		 * 
+		 * } else { marker = "First element is positive: " + numbers[i]; break; } }
+		 * System.out.println(marker);
+		 */
 	}
 }
