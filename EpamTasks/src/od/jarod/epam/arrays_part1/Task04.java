@@ -5,17 +5,16 @@ package od.jarod.epam.arrays_part1;
 public class Task04 {
 	public static void main(String[] args) {
 
-		double[] elements = { 22., 33., 44., 55., 66., 77 };
+		double[] elements = { 42., 3., 2., 1., 0., -7 };
 		
 		String str = "temp";
-		for (int i = 0; i < elements.length-1; i++) {
+		for (int i = 1; i < elements.length; i++) {
 
-			if (elements[i+1] > elements[i]) {
-				str = "быц";
-				System.out.println(elements[i]);
+			if (elements[i] >= elements[i - 1]) {
+				str = "возрастающая";
 				
 			} else {
-				str = "тыц";
+				str = "убывающая";
 			}
 		}
 		System.out.println("Последовательность - " + str);
